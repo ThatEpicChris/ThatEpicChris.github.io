@@ -39,7 +39,6 @@ a {
 }
 .nav-text {
     color: inherit;
-    font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     margin-left: 10px;
@@ -109,11 +108,7 @@ a {
     left: -2px;
 }
 .ring {
-    height: 36px;
-    width: 36px;
     position: absolute;
-    bottom: 18px;
-    left: calc(50% - 18px);
     border-radius: 100px;
     border: 2px solid #F5F5F5;
     opacity: 0.6;
@@ -124,12 +119,9 @@ a {
     animation: bob 2s ease-in-out infinite;
 }
 .budge {
-    font-size: 20px;
     position: absolute;
-    bottom: 26px;
     color: #F5F5F5;
     opacity: 0.6;
-    left: calc(50% - 10px);
     z-index: 10;
 }
 .budge:hover {
@@ -148,4 +140,37 @@ a {
     -webkit-transform: scale(1);    
     transform: scale(1);
   }
-}s
+}
+@media (max-width: 1000px) {
+    .nav-text {
+        font-size: 48px;
+    }
+    .ring {
+        height: 80px;
+        width: 80px;
+        left: calc(50% - 41px);
+        bottom: 30px;
+    }
+    .budge {
+        font-size: 48px !important;
+        bottom: 50px;
+        left: calc(50% - 24px);
+        
+    }
+}
+@media (min-width: 1001px) {
+    .nav-text {
+        font-size: 20px;
+    }
+    .ring {
+        height: 36px;
+        width: 36px;
+        left: calc(50% - 18px);
+        bottom: 18px;
+    }
+    .budge {
+        font-size: 20px;
+        bottom: 26px;
+        left: calc(50% - 10px);
+    }
+}
