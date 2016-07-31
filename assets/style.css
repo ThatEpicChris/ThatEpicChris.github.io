@@ -141,10 +141,6 @@ a {
     transform: scale(1);
   }
 }
-<<<<<<< HEAD
-}
-=======
->>>>>>> gh-pages
 @media (max-width: 1000px) {
     .nav-text {
         font-size: 48px;
