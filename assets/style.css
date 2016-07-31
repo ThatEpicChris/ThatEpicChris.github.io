@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+a {
+    color: inherit !important;
+}
+/* Navigation Styles */
+.nav-else {
+    background-color: #F5F5F5 !important;
+    color: #212121 !important;
+    border-bottom-color:#212121 !important;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(38,50,56,0.5);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(38,50,56,0.5);
+    box-shadow: 0px 0px 30px 0px rgba(38,50,56,0.5);
+}
+
+.navigation-base {
+    background-color: rgba(0,0,0,0);
+    border-bottom-color: #F5F5F5;
+    color: #F5F5F5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    padding-left: 20px;
+    z-index: 50;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.nav-text {
+    color: inherit;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 0;
+    opacity: 0.6;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.nav-text:hover {
+    opacity: 1;
+}
+.nav-active {
+    border-bottom-color: inherit;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+}
+
+/* General Section Styles */
+#section1 {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+    background: linear-gradient(227deg, #29b6f6, #66bb6a);
+    background-size: 400% 400%;
+    -webkit-animation: section1 15s ease infinite;
+    -moz-animation: section1 15s ease infinite;
+    -o-animation: section1 15s ease infinite;
+    animation: section1 15s ease infinite;
+}
+/* Specific Section Styles */
+/* Section 1 */
+@-webkit-keyframes section1 {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@-moz-keyframes section1 {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@-o-keyframes section1 {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@keyframes section1 { 
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+.overdeck {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIwIDEwODAiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMjEyMTIxO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMTwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNOTE3LjI5LDQ4OS44NGE2Ni4xMiw2Ni4xMiwwLDAsMSw3NS44Ni02LjcyLDQuNjgsNC42OCwwLDAsMCw1LjI4LS40OGwyMi41Ny0xOWE0LjkxLDQuOTEsMCwwLDAsLjI0LTdsLS40OC0uNDgtLjcyLS40OGMtMzcuNjktMjYuODktOTAuMjYtMjUuOTMtMTI3LDUuMjhhMTAzLjU3LDEwMy41NywwLDAsMCwxMDkuMiwxNzMuNTdBMTIxLjM5LDEyMS4zOSwwLDAsMCwxMDIwLDYyNC4yOFY2MjRoLjc2YS4yMi4yMiwwLDAsMSwuMjQtLjIyLDQuNTYsNC41NiwwLDAsMCwuMjQtNi42NWwtMTgtMjEuMzlhNC44Niw0Ljg2LDAsMCwwLTYuMjQtMS4yMS4yMy4yMywwLDAsMS0uMjQuMjMsNjUuOTEsNjUuOTEsMCwwLDEtNzkuNDYtMTA0LjkxWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEzMDUsMFYtNEg2OTFWLThIMFYxMDgwSDYxNHY4SDE5MTlWMFpNMTE0Ny4yOSw2MjEuMTYsMTA0MS4wNiw3MjcuMzljLTQ0LjYxLDQ0LjYxLTExNy42MSw0NC42MS0xNjIuMjIsMEw3NzIuNjEsNjIxLjE2Yy00NC42MS00NC42MS00NC42MS0xMTcuNjEsMC0xNjIuMjJMODc4Ljg0LDM1Mi43MWM0NC42MS00NC42MSwxMTcuNjEtNDQuNjEsMTYyLjIyLDBsMTA2LjIzLDEwNi4yM0MxMTkxLjksNTAzLjU1LDExOTEuOSw1NzYuNTUsMTE0Ny4yOSw2MjEuMTZaIi8+PC9zdmc+);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: Calc(100% + 4px);
+    position: fixed;
+    top: 0;
+    left: -2px;
+}
+.ring {
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    bottom: 18px;
+    left: calc(50% - 18px);
+    border-radius: 100px;
+    border: 2px solid #F5F5F5;
+    opacity: 0.6;
+    z-index: 3;
+    text-align: center;
+    -webkit-animation: bob 2s ease-in-out infinite;
+    -moz-animation: bob 2s ease-in-out infinite;
+    animation: bob 2s ease-in-out infinite;
+}
+.budge {
+    font-size: 20px;
+    position: absolute;
+    bottom: 26px;
+    color: #F5F5F5;
+    opacity: 0.6;
+    left: calc(50% - 10px);
+    z-index: 10;
+}
+.budge:hover {
+    opacity: 1;
+}
+@-webkit-keyframes bob {
+  0% { 
+    -webkit-transform: scale(1);            
+    transform: scale(1);
+  }
+  50% { 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% { 
+    -webkit-transform: scale(1);    
+    transform: scale(1);
+  }
+}s
