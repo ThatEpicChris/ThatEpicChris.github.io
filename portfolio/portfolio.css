@@ -87,3 +87,8 @@
     font-size: 10pt;
   }
 }
+.grandimage {
+  position: absolute;
+  right: 10%;
+  top: calc(50% - 225px);
+}
