@@ -263,7 +263,7 @@ a {
     .ring {
         height: 80px;
         width: 80px;
-        left: calc(50% - 40px);
+        left: calc(50% - 42px);
         bottom: 30px;
     }
     .budge {
@@ -298,6 +298,7 @@ a {
         bottom: 26px;
         left: calc(50% - 10px);
     }
+<<<<<<< HEAD
     .paneltitle {
       font-size: 24pt;
       position: absolute;
@@ -393,4 +394,6 @@ a {
   margin-bottom: 30px;
   padding-left: 30px;
   font-weight: bold;
+=======
+>>>>>>> origin/master
 }
