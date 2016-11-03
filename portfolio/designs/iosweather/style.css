@@ -1,0 +1,28 @@
+@-webkit-keyframes backgroundani {
+    0%{background-position:0% 0%}
+    50%{background-position:93% 100%}
+    100%{background-position:0% 0%}
+}
+@-moz-keyframes backgroundani {
+    0%{background-position:0% 0%}
+    50%{background-position:93% 100%}
+    100%{background-position:0% 0%}
+}
+@keyframes backgroundani {
+    0%{background-position:0% 0%}
+    50%{background-position:93% 100%}
+    100%{background-position:0% 0%}
+}
+.panelframe {
+  background: linear-gradient(145deg, #81b0ff, #152f62);
+  background-size: 400% 400%;
+  -webkit-animation: backgroundani 16s ease infinite;
+  -moz-animation: backgroundani 16s ease infinite;
+  animation: backgroundani 16s ease infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}

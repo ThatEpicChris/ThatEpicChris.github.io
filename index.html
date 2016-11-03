@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Chris Bravata</title>
-        <link rel="stylesheet" type="text/css" href="assets/style.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    </head>
-    <body>
-        <!-- Navigation is a dynamic header -->
+
+<head>
+    <title>Chris Bravata</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/mobilemenu.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation is a dynamic header -->
+    <!-- Asthetic Box -->
+    <div class="borderbox"></div>
         <div class="navigation-base">
-            <div class="nav-text">Chris Bravata</div>
+          <a href="http://chrisbravata.me" class="nav-logo"><img src="assets/logo.png" height="50px" width="50px"></a>
+          <div class="menutitle">
+            <a href='http://chrisbravata.me'><div class="nav-text">Home</div></a>
+            <a href="/portfolio/"><div class="nav-text">Portfolio</div></a>
+            <a href="/contact/"><div class="nav-text">Contact</div></a>
+            <br><div class="pagetitle">Home</div>
+            </div>
         </div>
+        <!-- Mobile Menu -->
+        <a href="#" id="mobilemenu"><div class="menutoggle"></div></a>
+        <div class="mobilemenucase" id="mobilemenucase">
+          <a href="http://chrisbravata.me"><div class="mm-nav">Home</div></a>
+          <a href="portfolio/index.html"><div class="mm-nav">Portfolio</div></a>
+          <a href="contact/index.html"><div class="mm-nav">Contact</div></a>
+          <div class="mm-close" id="mm-close">CLOSE</div>
+        </div>
+
         <!-- Section 1 is a grounded section -->
-        <div id="section1">
-            <a href="mailto:chris@chrisbravata.me"><div class="ring"></div>
-            <i class="material-icons budge">mail_outline</i></a>
-            <div class="overdeck"></div>
+        <div class="hello">
+        <div class="paneltitle">
+            Hello.<br> I'm Chris Bravata.
         </div>
-        
-        <script src="assets/jquery.js"></script>
-        <script src="assets/main.js"></script>
-    </body>
+      </div>
+        <div class="overdeck"></div>
+
+    <div id="section1">
+    </div>
+
+    <script src="assets/jquery.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+
 </html>
