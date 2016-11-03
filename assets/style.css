@@ -298,7 +298,6 @@ a {
         bottom: 26px;
         left: calc(50% - 10px);
     }
-<<<<<<< HEAD
     .paneltitle {
       font-size: 24pt;
       position: absolute;
@@ -394,6 +393,4 @@ a {
   margin-bottom: 30px;
   padding-left: 30px;
   font-weight: bold;
-=======
->>>>>>> origin/master
 }
