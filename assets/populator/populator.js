@@ -1,5 +1,7 @@
-$(document).ready(function () {
-    $.getJSON('assets/populator/population.json', function (data) {
-      $( "#block" ).append( this.title);
+$.getJSON('assets/populator/populator.js', function(data) {
+    $.each(data, function(index, element) {
+        $('body').append($('<div>', {
+            text: message.text
+        }));
     });
 });
