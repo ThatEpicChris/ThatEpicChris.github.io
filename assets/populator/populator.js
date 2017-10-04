@@ -19,7 +19,7 @@ $(document).ready(function () {
        // LINE 2: HTML Pairing & Variable Pairing (Use 'this.object' where object is the section title within the Category)
        $.each(population.works, function (works) {
         $( "wkcard" ).append(
-          "<a data-remodal-target=" + this.id +"><div class=wk-card><div class=wk-img  style=background-image:url(" + this.img + ")></div><div class=wk-title>" + this.title + "</div><div class=wk-tag>" + this.tag + "</div></div></a><div class=remodal data-remodal-id=" + this.id + "><div class=wk-content>" + this.content + "</div><br><a class=btn href=" + this.link + ">VIEW PROJECT</a></div>"
+          "<a href=#" + this.id +"><div class=wk-card><div class=wk-img  style=background-image:url(" + this.img + ")></div><div class=wk-title>" + this.title + "</div><div class=wk-tag>" + this.tag + "</div></div></a><div class=remodal data-remodal-id=" + this.id + "><div class=wk-title>" + this.title + "</div><br><div class=wk-img-inline  style=background-image:url(" + this.img + ")></div><br><div class=wk-content>" + this.content + "</div><br><a class=btn href=" + this.link + ">VIEW PROJECT</a></div>"
         );
 
     });
