@@ -15,6 +15,7 @@ html, body {
   margin: 10px;
   display: inline-block;
   position: relative;
+  z-index: 2 !important;
   text-align: left !important;
   font-family: "halyard-display", sans-serif;
 }
@@ -27,13 +28,15 @@ html, body {
   left: 0;
   /*background-color: red;*/
   border-radius: 20px;
+  z-index: 3 !important;
 }
 
 .cb-header-2 {
   color: white;
   display: inline-block;
-  font-weight: bold;
-  font-size: 36px;
+  font-weight: medium;
+  font-size: 28px;
+  z-index: 10 !important;
 }
 
 .cb-projectHeader {
@@ -53,6 +56,7 @@ html, body {
   margin-left: 10px;
   bottom: 20px;
   left: 10px;
+  z-index: 10 !important;
 }
 
 .cb-btn:hover {
@@ -76,4 +80,6 @@ html, body {
 }
 .project-marchingTrojans2018-3 {
   background-image: url(../media/preview/marchingTrojansHeader.png);
+  background-size: cover;
+  background-position: center center;
 }
