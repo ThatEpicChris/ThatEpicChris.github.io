@@ -54,6 +54,8 @@ html, body {
   display: inline-block;
   position: absolute;
   padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 20px;
   margin-left: 10px;
   bottom: 20px;
