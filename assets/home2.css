@@ -37,6 +37,8 @@ html, body {
   font-weight: medium;
   font-size: 28px;
   z-index: 10 !important;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .cb-projectHeader {
