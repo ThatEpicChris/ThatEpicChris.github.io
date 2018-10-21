@@ -1,0 +1,183 @@
+* {
+    transition: all 0.25s linear 0s;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
+.catch {
+    position: fixed;
+    width: 100vw;
+    bottom: 25px;
+    z-index: 5;
+}
+.content-container {
+    position: relative;
+    left: 50%;
+    float: left;
+    z-index: 1;
+}
+.actionless {
+    position: relative;
+    display: inline-block;
+    left: -50%;
+    float: left;
+    width: auto;
+    font-weight: bold;
+    z-index: 1;
+    font-family: sofia-pro, sans-serif;
+    background-color: rgb(240, 96, 34);
+    color: rgb(254, 254, 254);
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    opacity: 1;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(17, 34, 72);
+    margin: 25px;
+}
+.actionable {
+    position: relative;
+    display: inline-block;
+    left: -50%;
+    float: left;
+    width: auto;
+    font-weight: bold;
+    z-index: 1;
+    font-family: sofia-pro, sans-serif;
+    background-color: rgb(240, 96, 34);
+    color: rgb(254, 254, 254);
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    opacity: 1;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(254, 254, 254);
+    margin: 25px;
+}
+.actionable:hover {
+  background-color: rgb(17, 34, 72);
+  color: rgb(254, 254, 254);
+  border-color: rgb(240, 96, 34);
+}
+.mega {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(17, 34, 72);
+    position: relative;
+    margin: 0px;
+    overflow: hidden;
+    animation: megaMode 5s ease-in 0s 1 normal forwards running;
+}
+.logo {
+    position: absolute;
+    height: 20vh;
+    width: 20vw;
+    margin-left: 40vw;
+    margin-top: 40vh;
+}
+.ring {
+    position: absolute;
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.r1 {
+    height: 27.5vh;
+    width: 27.5vw;
+    margin-left: 36.125vw;
+    margin-top: 36.125vh;
+    -webkit-animation: rotating 6s linear infinite;
+    -moz-animation: rotating 6s linear infinite;
+    -ms-animation: rotating 6s linear infinite;
+    -o-animation: rotating 6s linear infinite;
+    animation: rotating 6s linear infinite;
+}
+.r2 {
+    height: 40vh;
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 30vh;
+    -webkit-animation: rotating 6.25s linear infinite;
+    -moz-animation: rotating 6.25s linear infinite;
+    -ms-animation: rotating 6.25s linear infinite;
+    -o-animation: rotating 6.25s linear infinite;
+    animation: rotating 6.25s linear infinite;
+}
+.r3 {
+    height: 55vh;
+    width: 55vw;
+    margin-left: 22.5vw;
+    margin-top: 22.5vh;
+    -webkit-animation: rotating 6.5s linear infinite;
+    -moz-animation: rotating 6.5s linear infinite;
+    -ms-animation: rotating 6.5s linear infinite;
+    -o-animation: rotating 6.5s linear infinite;
+    animation: rotating 6.5s linear infinite;
+}
+.r4 {
+    height: 75vh;
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-top: 12.5vh;
+    -webkit-animation: rotating 6.75s linear infinite;
+    -moz-animation: rotating 6.75s linear infinite;
+    -ms-animation: rotating 6.75s linear infinite;
+    -o-animation: rotating 6.75s linear infinite;
+    animation: rotating 6.75s linear infinite;
+}
+.r5 {
+    height: 100vh;
+    width: 100vw;
+    margin-left: 0px;
+    margin-top: 0px;
+    -webkit-animation: rotating 7s linear infinite;
+    -moz-animation: rotating 7s linear infinite;
+    -ms-animation: rotating 7s linear infinite;
+    -o-animation: rotating 7s linear infinite;
+    animation: rotating 7s linear infinite;
+}
+.r6 {
+    height: 130vh;
+    width: 130vw;
+    margin-left: -15vw;
+    margin-top: -15vh;
+    -webkit-animation: rotating 7.25s linear infinite;
+    -moz-animation: rotating 7.25s linear infinite;
+    -ms-animation: rotating 7.25s linear infinite;
+    -o-animation: rotating 7.25s linear infinite;
+    animation: rotating 7.25s linear infinite;
+}
