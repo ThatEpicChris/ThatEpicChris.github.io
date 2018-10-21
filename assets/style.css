@@ -1,13 +1,8 @@
 * {
   font-family: 'Montserrat', sans-serif;
-  -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+  -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
     outline:none;
-}
-.deskew {
-  -ms-transform: skew(0deg, 10deg); /* IE 9 */
-  -webkit-transform: skew(0deg, 10deg); /* Safari */
-  transform: skew(0deg, 10deg);
 }
 body, html {
   position: absolute;
@@ -19,23 +14,31 @@ body, html {
   background-color: #F7F7F7;
 }
 /* NAVIGATION */
-.navslant {
-  width: 800px;
-  background-color: #F7F7F7;
-  height: 200px;
+.nav-column {
   position: fixed;
-  top: -130px;
-  left: 0;
-  -ms-transform: skew(0deg, -10deg); /* IE 9 */
-  -webkit-transform: skew(0deg, -10deg); /* Safari */
-  transform: skew(0deg, -10deg);
-  z-index: 100;
-}
-.cb-logo-txt {
-  position: fixed;
-  top: 110px;
+  top: 20px;
   left: 20px;
-  width: 300px;
+  height: calc(100vh - 40px);
+  width: 100px;
+  background-color: #fffef7;
+  z-index: 99999999;
+}
+.nav-entry {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-width: 10px;
+  border-style: solid;
+  background-color: #fffef7;
+  border-color: #fffef7;
+}
+.nav-entry:hover {
+  border-color: #10334c;
+}
+.nav-cb-logo {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 60px;
   height: auto;
 }
 /* HEADER SECTION */
@@ -51,11 +54,24 @@ body, html {
 }
 .header-ghost {
   position: relative;
-  -ms-transform: skew(0deg, -10deg); /* IE 9 */
-  -webkit-transform: skew(0deg, -10deg); /* Safari */
-  transform: skew(0deg, -10deg);
-  height: 600px;
+  height: calc(100vh - 200px);
   width: 100vw;
+}
+.welcomemat {
+  position: relative;
+  height: 200px;
+  width: 100vw;
+}
+.greeter {
+  font-size: 72px;
+  text-align: left;
+  width: calc(100vw - 160px);
+  background-color: red;
+  left: 140px;
+  position: absolute;
+  font-family: "gin",sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 .profilepic {
   height: 200px;
@@ -65,11 +81,17 @@ body, html {
   right: 10vw;
   top: -50px;
 }
+.scroll-hint {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  left: calc(50vw - 25px);
+}
+.scroll-hint path {
+  fill: white !important;
+}
 /* ABOUT SECTION */
 .about {
-  -ms-transform: skew(0deg, -10deg); /* IE 9 */
-  -webkit-transform: skew(0deg, -10deg); /* Safari */
-  transform: skew(0deg, -10deg);
   height: auto;
   position: relative;
   min-height: 600px;
@@ -260,13 +282,16 @@ body, html {
 }
 /* FOOTER STYLES */
 .footer {
-  height: 600px;
+  height: 300px;
   position: relative;
+  background-color: #fffef7;
+  margin: 20px;
+  width: calc(100% - 40px);
 }
 .cb-logo-ico {
   position: absolute;
-  top: 200px;
-  left: calc(50vw - 50px);
+  top: 100px;
+  left: calc(50vw - 70px);
   width: 100px;
   height: auto;
 }
@@ -278,6 +303,33 @@ body, html {
   width: 100vw;
   text-align: center;
   bottom: 100px;
+}
+.footer-text-left {
+  color: #10334c;
+  position: absolute;
+  text-align: right;
+  width: calc(50vw - 100px);
+  height: 50px;
+  left: 0px;
+  top: 130px;
+  font-size: 24pt;
+  font-family: "gin";
+}
+.footer-text-right {
+  color: #10334c;
+  position: absolute;
+  text-align: left;
+  width: calc(50vw - 100px);
+  height: 50px;
+  top: 130px;
+  right: 0px;
+  font-size: 24pt;
+  font-family: "gin";
+}
+footer-i {
+  font-family: "gin",serif;
+  font-style: italic;
+  font-weight: 400;
 }
 /* UNIVERSAL STYLES */
 .ghost-title {

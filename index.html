@@ -2,104 +2,143 @@
 <html>
 
 <head>
-    <title>Chris Bravata</title>
-    <link rel="stylesheet" type="text/css" href="assets/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="assets/remodal.css">
-    <link rel="stylesheet" href="assets/remodal-default-theme.css">
-    <!-- <base href="http://www.chrisbravata.me/"> -->
+  <title>Chris Bravata</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="assets/remodal.css">
+  <link rel="stylesheet" href="assets/remodal-default-theme.css">
+  <!-- <base href="http://www.chrisbravata.me/"> -->
+  <script defer src="assets/jquery.js"></script>
+  <script>
+  document.querySelectorAll('img.svg').forEach(function(element) {
+            var imgID = element.getAttribute('id')
+            var imgClass = element.getAttribute('class')
+            var imgURL = element.getAttribute('src')
+
+            xhr = new XMLHttpRequest()
+            xhr.onreadystatechange = function() {
+                if(xhr.readyState == 4 && xhr.status == 200) {
+                    var svg = xhr.responseXML.getElementsByTagName('svg')[0];
+
+                    if(imgID != null) {
+                         svg.setAttribute('id', imgID);
+                    }
+
+                    if(imgClass != null) {
+                         svg.setAttribute('class', imgClass + ' replaced-svg');
+                    }
+
+                    svg.removeAttribute('xmlns:a')
+
+                    if(!svg.hasAttribute('viewBox') && svg.hasAttribute('height') && svg.hasAttribute('width')) {
+                        svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'))
+                    }
+                    element.parentElement.replaceChild(svg, element)
+                }
+            }
+            xhr.open('GET', imgURL, true)
+            xhr.send(null)
+        })
+  </script>
 </head>
 
 <body>
-    <div id="nav" class="navslant">
-      <img src="assets/cb-logo-txt.svg" class="cb-logo-txt deskew"/>
+  <div class="nav-column">
+    <div class="nav-entry">
+      <img src="assets/cb-logo-ico.svg" class="nav-cb-logo svg"/>
+      </div>
     </div>
     <div class="remodal-bg">
-    <div class="header">
-      <div class="deskew container">
+      <div class="header">
+
       </div>
+      <div class="header-ghost">
+
+      </div>
+      <div class="welcomemat">
+        <div class="greeter">Hello!</div>
+        <img src="assets/scroll-hint.svg" class="scroll-hint"/>
     </div>
-    <div class="header-ghost">
-      <div class="deskew container">
-        <div class="space"></div>
-        <!-- Keeping the Header Title code here, but omitting it in final release -->
-        <!-- <h1 class="ghost-title"><headertitle1></headertitle1></h1> -->
-      </div>
-    </div>
-    <div class="about">
-      <div class="deskew container">
-        <h1 class="ghost-title upper-bumper"><headertitle2></headertitle2></h1>
-        <img src="profile.jpg" class="profilepic">
-        <div class="about-txt"><abouttxt></abouttxt></div>
-      </div>
-    </div>
-    <div class="works">
-      <div class="container">
-        <h1 class="ghost-title upper-bumper"><headertitle3></headertitle3></h1>
-      </div>
-      <div class="works-slider">
-        <div class="wk-container">
-          <div class="wk-space"></div>
-          <wkcard></wkcard>
-          <div class="wk-card-end">
+        <div class="about">
+          <div class="deskew container">
+            <h1 class="ghost-title upper-bumper"><headertitle2></headertitle2></h1>
+            <img src="profile.jpg" class="profilepic">
+            <div class="about-txt">
+              <abouttxt></abouttxt>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="contact">
-      <div class="container">
-        <h1 class="ghost-title"><headertitle4></headertitle4></h1>
-        <div class="contact-form">
-          <form action="mailto:chris@chrisbravata.me" method="post" enctype="text/plain">
-            <input class="cf-input" type="text" name="name" placeholder="Your Name?"><br>
-            <input class="cf-input" type="email" name="mail" placeholder="Your Email?"><br>
-            <input class="cf-input" type="text" name="comment" placeholder="What can I help you with?"><br><br>
-            <div class="btn-block">
-              <input class="btn" type="submit" value="Send">
-              <input class="btn-right subbtn" type="reset" value="Reset">
+        <div class="works">
+          <div class="container">
+            <h1 class="ghost-title upper-bumper"><headertitle3></headertitle3></h1>
+          </div>
+          <div class="works-slider">
+            <div class="wk-container">
+              <div class="wk-space"></div>
+              <wkcard></wkcard>
+              <div class="wk-card-end">
+              </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="footer">
-      <img src="assets/cb-logo-ico.svg" class="cb-logo-ico"/>
-      <div class="footer-text">
-        <footertxt></footertxt>
-      </div>
-    </div>
-  </div>
+        <div class="contact">
+          <div class="container">
+            <h1 class="ghost-title"><headertitle4></headertitle4></h1>
+            <div class="contact-form">
+              <form action="mailto:chris@chrisbravata.me" method="post" enctype="text/plain">
+                <input class="cf-input" type="text" name="name" placeholder="Your Name?"><br>
+                <input class="cf-input" type="email" name="mail" placeholder="Your Email?"><br>
+                <input class="cf-input" type="text" name="comment" placeholder="What can I help you with?"><br><br>
+                <div class="btn-block">
+                  <input class="btn" type="submit" value="Send">
+                  <input class="btn-right subbtn" type="reset" value="Reset">
+            </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-text-left">
+            MADE IN <footer-i>THE GOOD LAND</footer-i>
+          </div>
+          <div class="footer-text-right">
+            MILWAUKEE, WISCONSIN
+          </div>
+          <img src="assets/cb-logo-ico.svg" class="cb-logo-ico svg"/>
 
-    <script>
-        (function(i, s, o, g, r, a, m) {
+    </div>
+        </div>
+
+        <script>
+          (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
+              (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
+              m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+          })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-81702051-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <script defer src="assets/jquery.js"></script>
-    <script defer src="assets/populator/populator.js"></script>
-    <script type="text/javascript">
-function downloadJSAtOnload() {
-var element = document.createElement("script");
-element.src = "assets/remodal.js";
-document.body.appendChild(element);
-}
-if (window.addEventListener)
-window.addEventListener("load", downloadJSAtOnload, false);
-else if (window.attachEvent)
-window.attachEvent("onload", downloadJSAtOnload);
-else window.onload = downloadJSAtOnload;
-</script>
+          ga('create', 'UA-81702051-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+        <script defer src="assets/populator/populator.js"></script>
+        <script type="text/javascript">
+          function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "assets/remodal.js";
+            document.body.appendChild(element);
+          }
+          if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+          else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+          else window.onload = downloadJSAtOnload;
+        </script>
 </body>
 
 </html>
