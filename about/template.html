@@ -1,0 +1,141 @@
+<html>
+
+<head>
+  <title>ChrisB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="material.min.css" type="text/css" rel="stylesheet"> -->
+  <link href="../style.css" type="text/css" rel="stylesheet" />
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/fvc1dfo.css">
+</head>
+
+<body>
+  <script src="../animations.js"></script>
+  <script defer src="../../assets/jquery.js"></script>
+  <script defer src="populator.js"></script>
+
+  <div id="shadeGroup" class="shadeGroup">
+      <div id="s1" class="shade s1"></div>
+      <div id="s2" class="shade s2"></div>
+      <div id="s3" class="shade s3"></div>
+      <div id="s4" class="shade s4"></div>
+      <div id="s5" class="shade s5"></div>
+  </div>
+
+  <div class="verts">
+    <div class="vert v1"></div>
+    <div class="vert v2"></div>
+    <div class="vert v3"></div>
+    <div class="vert v4"></div>
+  </div>
+  <div onclick="menuToggle()" id="menuToggle" class="menuToggle">MENU</div>
+  <div id="menuFrame" class="menu" style="visibility: hidden;">
+    <div class="h20Buffer"></div>
+    <div class="menuHeader">
+      Hello There.<br />
+      I'm Chris.<br />
+    </div>
+    <div class="h20Buffer"></div>
+    <div class="menuIndex">
+      <a href="#" id="outlink" class="menuLink">HOME</a><br />
+      <a href="#" id="outlink" class="menuLink">ABOUT</a><br />
+      <a href="#" id="outlink" class="menuLink">CREATIONS</a><br />
+      <a href="#" id="outlink" class="menuLink">BLOG</a><br />
+      <a href="#" id="outlink" class="menuLink">CONTACT</a><br />
+    </div>
+  </div>
+  <div id="chipStart"></div>
+  <div class="titleBox">
+    <div class="titleOverImage">Hi, I'm Chris</div>
+    <div class="subtitleOverImage">About Me</div>
+  </div>
+  <div class="chip chipFeatureImage" style="background-image:url(background.jpg)">
+    <div class="CreamBDRBottom"></div>
+  </div>
+  <div class="chip chipBody">
+      <div class="textBox">
+          Throughout my high school career I often felt like my school's logo was 'too generic'. In fact, as far as I have researched - it was internet clip art. As a personal side project, I crafted my own interpretation of the 'Trojans' identity. This included the creation of a custom typeface inspried by the iconic pillars of the greek and roman eras.
+      </div>
+  </div>
+  <div class="chip chipQuote">
+      <div class="quoteMarker">“</div>
+      <div class="quoteStatement">
+          Proin efficitur convallis ex, sodales vestibulum metus porta eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque hendrerit augue et dui tincidunt, vel ullamcorper libero consectetur.
+      </div>
+      <div class="quoteAuthor">
+          Peter Smathings
+      </div>
+  </div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="../portrait-linework.png" />
+      <div class="LargePhotoCaption">A cold chicago morning outside Union Station.</div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(1)" class="SmallPhoto SPLeft" style="background-image:url(demobg2.png)"></div>
+      <div id="PO1" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="demobg2.png" />
+          <div class="popOutCaption">Trials and survival.</div>
+          <div onclick="closePopUp(1)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(1)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(2)" class="SmallPhoto SPMiddle" style="background-image:url(demobg2.png)"></div>
+      <div id="PO2" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="demobg2.png" />
+          <div class="popOutCaption">Trials and survival.</div>
+          <div onclick="closePopUp(2)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(2)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(3)" class="SmallPhoto SPRight" style="background-image:url(demobg2.png)"></div>
+      <div id="PO3" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="demobg2.png" />
+          <div class="popOutCaption">Trials and survival.</div>
+          <div onclick="closePopUp(3)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(3)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipCallout">
+    <div class="CreamBDRTop"></div>
+      <div class="calloutTitle">Title</div>
+      <div class="calloutSubtitle">Lorem Ipsum Milwaukee is my Home</div>
+      <a class="calloutCTA">GET ON HOME</a>
+      <div class="CreamBDRBottom"></div>
+  </div>
+  <div class="chip chipCallout CoOrange">
+    <div class="CreamBDRTop"></div>
+      <div class="calloutTitle CoTitleOrange">Title</div>
+      <div class="calloutSubtitle CoSubtitleOrange">Lorem Ipsum Milwaukee is my Home</div>
+      <a class="calloutCTA">GET ON HOME</a>
+      <div class="CreamBDRBottom"></div>
+  </div>
+  <div class="chip chipInfoCard">
+    <img class="infoIMG" src="" />
+    <div class="infoTitle">University of Wisconsin-Milwaukee</div>
+    <div class="infoSubtitle">Digital Visual Communications Major '23</div>
+    <div class="infoDesc">
+      test
+      <div class="infoAlert">
+        <div class="WhiteBDRTop"></div>
+        <div class="iaTitle">Whole Kids Award</div>
+        <div class="iaBody">testesttest</div>
+        <div class="WhiteBDRBottom"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="CreamBDRTop"></div>
+    <img class="footerIMG" src="../portrait-linework.png" />
+    <div class="footerText">Be Different.<br />Be Better.<br /><span class="footerOrangeHighlight">Be You.</span><a class="footerCTA" href="/contact">CONTACT ME</a></div>
+  </div>
+
+  <script>
+    launchTransition(); //reset shades
+    closeTransition(); //reset shades
+    launchTransition();
+    setTimeout(function() {
+      closeTransition();
+    }, 1000);
+  </script>
+  <script src="../article.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<html>
+
+<head>
+  <title>ChrisB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="material.min.css" type="text/css" rel="stylesheet"> -->
+  <link href="/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/fvc1dfo.css">
+</head>
+
+<body>
+  <script src="/animations.js"></script>
+
+  <div id="shadeGroup" class="shadeGroup">
+      <div id="s1" class="shade s1"></div>
+      <div id="s2" class="shade s2"></div>
+      <div id="s3" class="shade s3"></div>
+      <div id="s4" class="shade s4"></div>
+      <div id="s5" class="shade s5"></div>
+  </div>
+
+  <div class="verts">
+    <div class="vert v1"></div>
+    <div class="vert v2"></div>
+    <div class="vert v3"></div>
+    <div class="vert v4"></div>
+  </div>
+  <div onclick="menuToggle()" id="menuToggle" class="menuToggle">MENU</div>
+  <div id="menuFrame" class="menu" style="visibility: hidden;">
+    <div class="h20Buffer"></div>
+    <div class="menuHeader">
+      Hello There.<br />
+      I'm Chris.<br />
+    </div>
+    <div class="h20Buffer"></div>
+    <div class="menuIndex">
+      <a href="/" id="outlink" class="menuLink">HOME</a><br />
+      <a href="/about" id="outlink" class="menuLink">ABOUT</a><br />
+      <a href="/creations" id="outlink" class="menuLink">CREATIONS</a><br />
+      <a href="/blog" id="outlink" class="menuLink">BLOG</a><br />
+      <a href="/contact" id="outlink" class="menuLink">CONTACT</a><br />
+    </div>
+  </div>
+  <div id="chipStart"></div>
+  <div class="chip chipFeatureImage" style="background-image:url(featureImg.png)">
+    <div class="titleBox">
+      <div class="titleOverImage">Wauwatosa West Trojans</div>
+      <div class="subtitleOverImage">ATHLETIC BRAND CONCEPT</div>
+    </div>
+    <div class="CreamBDRBottom"></div>
+  </div>
+  <div class="chip chipBody">
+      <div class="textBox">
+          Throughout my high school career I often felt like my school's logo was 'too generic'. In fact, as far as I have researched - it was internet clip art. As a side project, I crafted my own interpretation of the 'Trojans' identity. This included the creation of a custom typeface, a redrawn Trojan head and the introduction of some alternate marks.
+      </div>
+  </div>
+  <div class="chip chipBody">
+    <div class="calloutTitle CoTitleOrange">The Trojan Head</div>
+      <div class="textBox">
+         A primary point of inspiration for the creation of these logos was the Milwaukee Bucks and Milwaukee Admirals new logos. Much like how the Bucks have a hidden M, basketball, and a small omage to the Milwaukee Hawks hidden in their logo - I included many hidden elements into the Trojans head. Some rather hiddens elements include the gap within the Eyes and Mouth to resemble a T, and a W within the plume. I also included two W's for Wauwatosa West - one as a crest on the front of the helmet, and the other on the neck pendant.
+      </div>
+  </div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="logo2.png" />
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(1)" class="SmallPhoto SPLeft" style="background-image:url(logo1.png)"></div>
+      <div id="PO1" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="logo1.png" />
+          <div class="popOutCaption">Primary block logo</div>
+          <div onclick="closePopUp(1)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(1)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(2)" class="SmallPhoto SPMiddle" style="background-image:url(logo8.png)"></div>
+      <div id="PO2" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="logo8.png" />
+          <div class="popOutCaption">Trojan head with full cape</div>
+          <div onclick="closePopUp(2)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(2)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(3)" class="SmallPhoto SPRight" style="background-image:url(logo6.png)"></div>
+      <div id="PO3" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="logo6.png" />
+          <div class="popOutCaption">Trojan head with simplified cape</div>
+          <div onclick="closePopUp(3)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(3)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipBody">
+    <div class="calloutTitle CoTitleOrange">The Alternate Marks</div>
+      <div class="textBox">
+        The longstanding rivalry of Wauwatosa West and Wauwatosa East is the primary inspriation of this alternate mark. Both schools feature traveling trophies for their Football and basketball programs. These trophies, a Sword for Football and Shield for Basketball, are the inspiration for these alternate marks. The sword is positioned to resemble a 'T' and the shield featuring a 'W' design. When together, the Shield and Sword make up the school's 'acronym' TW, and signify success in regards to the rivalry trophies.
+      </div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(4)" class="SmallPhoto SPLeft" style="background-image:url(logo3.png)"></div>
+      <div id="PO4" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="logo3.png" />
+          <div class="popOutCaption">The Sword and Shield</div>
+          <div onclick="closePopUp(4)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(4)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(5)" class="SmallPhoto SPMiddle" style="background-image:url(logo5.png)"></div>
+      <div id="PO5" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="logo5.png" />
+          <div class="popOutCaption">The Sword</div>
+          <div onclick="closePopUp(5)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(5)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(6)" class="SmallPhoto SPRight" style="background-image:url(logo4.png)"></div>
+      <div id="PO6" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="logo4.png" />
+          <div class="popOutCaption">The Shield</div>
+          <div onclick="closePopUp(6)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(6)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipBody">
+      <div class="textBox">
+          The design on the shield is reflected in a simplified manner on the Trojan head as a neck pendant. This pendant is comprised of three shapes, drawing parallel to the Trojan Way's three pillars; Work Hard, Get Involved, Achieve Success.
+      </div>
+  </div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="pendant.png" />
+  </div>
+  <div class="chip chipQuote">
+      <div class="quoteMarker">“</div>
+      <div class="quoteStatement">
+          These unique and original designs are a game changer in terms of bringing a revamped and fierce look to Tosa West. It is my firm belief that everyone at Tosa Weest will be behind these sharp and cunning edge designs.
+      </div>
+      <div class="quoteAuthor">
+          Lucas Metzner, Class of 2020
+      </div>
+  </div>
+  <div class="chip chipBody">
+    <div class="calloutTitle CoTitleOrange">The Meandros</div>
+    <div class="textBox">
+      Majority of the logos I designed feature a pattern known as a meandros, a pattern repeated through a continuous line. While simply incorporating a meandros to enhance the visual aesthetic would be nice, I took it a step further by implementing a T and W into the infinite pattern.
+    </div>
+  </div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="meandros.png" />
+      <div class="LargePhotoCaption">The Meandros Pattern</div>
+  </div>
+  <div class="chip chipBody">
+    <div class="calloutTitle CoTitleOrange">The Typography</div>
+    <div class="textBox">
+      I wanted to retain the collegiate feel as much as possible, so I knew a slab serif was a solid foundation. From there, I looked to roman and greek architecture for visual cues that I could integrate with the lettering. I instantly connected the idea of columns with the stem of each letter.
+    </div>
+  </div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="typography.png" />
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(7)" class="SmallPhoto SPLeft" style="background-image:url(wordmark.png)"></div>
+      <div id="PO7" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="wordmark.png" />
+          <div class="popOutCaption">Full detailed wordmark</div>
+          <div onclick="closePopUp(7)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(7)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(8)" class="SmallPhoto SPMiddle" style="background-image:url(arched-teamname.png)"></div>
+      <div id="PO8" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="arched-teamname.png" />
+          <div class="popOutCaption">Home Wordmark</div>
+          <div onclick="closePopUp(8)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(8)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(9)" class="SmallPhoto SPRight" style="background-image:url(arched-schoolname.png)"></div>
+      <div id="PO9" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="arched-schoolname.png" />
+          <div class="popOutCaption">Away Wordmark</div>
+          <div onclick="closePopUp(9)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(9)" class="popOutShadow"></div>
+      </div>
+  </div>
+
+  <div class="chip chipBody">
+      <div class="calloutTitle CoTitleOrange">Jerseys and Additional Designs</div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(10)" class="SmallPhoto SPLeft" style="background-image:url(jersey-baseball.png)"></div>
+      <div id="PO10" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="jersey-baseball.png" />
+          <div class="popOutCaption">Baseball Jerseys</div>
+          <div onclick="closePopUp(10)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(10)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(11)" class="SmallPhoto SPMiddle" style="background-image:url(jersey-basketball.png)"></div>
+      <div id="PO11" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="jersey-basketball.png" />
+          <div class="popOutCaption">Basketball Jerseys</div>
+          <div onclick="closePopUp(11)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(11)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(12)" class="SmallPhoto SPRight" style="background-image:url(jersey-football.png)"></div>
+      <div id="PO12" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="jersey-football.png" />
+          <div class="popOutCaption">Football Jerseys</div>
+          <div onclick="closePopUp(12)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(12)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="name-slogan-stripe.png" />
+  </div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="court-design.png" />
+  </div>
+  <div class="chip chipBody">
+
+  </div>
+  <div class="footer">
+    <div class="CreamBDRTop"></div>
+    <img class="footerIMG" src="/portrait-linework.png" />
+    <div class="footerText">Be Different.<br />Be Better.<br /><span class="footerOrangeHighlight">Be You.</span><a class="footerCTA" href="/contact">CONTACT ME</a></div>
+  </div>
+
+  <script>
+    launchTransition(); //reset shades
+    closeTransition(); //reset shades
+    launchTransition();
+    setTimeout(function() {
+      closeTransition();
+    }, 1000);
+  </script>
+  <script src="/article.js"></script>
+</body>
+
+</html>

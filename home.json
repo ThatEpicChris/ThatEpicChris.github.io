@@ -1,0 +1,28 @@
+{
+	"slider": {
+		"slider1": {
+			"title": "Tosa West Trojans",
+			"subtitle": "Concept Sports Branding",
+			"img": "creations/trojansAthleticBrand/featureImg.png",
+			"id": "sT1",
+      "bannerId": "hB1",
+			"link": "/creations/trojansAthleticBrand"
+		},
+		"slider2": {
+			"title": "Marching Trojans",
+			"subtitle": "Shirt Design",
+			"img": "creations/marchingTrojans2018/featureImg.png",
+			"id": "sT2",
+      "bannerId": "hB2",
+			"link": "/creations/marchingTrojans2018"
+		},
+		"slider3": {
+			"title": "Koinadugu College",
+			"subtitle": "DesignMil 2018",
+			"img": "creations/designMil2018/featureImg.png",
+			"id": "sT3",
+      "bannerId": "hB3",
+			"link": "/creations/designMil2018"
+		}
+	}
+}

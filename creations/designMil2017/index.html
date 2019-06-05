@@ -1,0 +1,172 @@
+<html>
+
+<head>
+  <title>ChrisB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="material.min.css" type="text/css" rel="stylesheet"> -->
+  <link href="/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/fvc1dfo.css">
+</head>
+
+<body>
+  <script src="/animations.js"></script>
+
+  <div id="shadeGroup" class="shadeGroup">
+      <div id="s1" class="shade s1"></div>
+      <div id="s2" class="shade s2"></div>
+      <div id="s3" class="shade s3"></div>
+      <div id="s4" class="shade s4"></div>
+      <div id="s5" class="shade s5"></div>
+  </div>
+
+  <div class="verts">
+    <div class="vert v1"></div>
+    <div class="vert v2"></div>
+    <div class="vert v3"></div>
+    <div class="vert v4"></div>
+  </div>
+  <div onclick="menuToggle()" id="menuToggle" class="menuToggle">MENU</div>
+  <div id="menuFrame" class="menu" style="visibility: hidden;">
+    <div class="h20Buffer"></div>
+    <div class="menuHeader">
+      Hello There.<br />
+      I'm Chris.<br />
+    </div>
+    <div class="h20Buffer"></div>
+    <div class="menuIndex">
+      <a href="/" id="outlink" class="menuLink">HOME</a><br />
+      <a href="/about" id="outlink" class="menuLink">ABOUT</a><br />
+      <a href="/creations" id="outlink" class="menuLink">CREATIONS</a><br />
+      <a href="/blog" id="outlink" class="menuLink">BLOG</a><br />
+      <a href="/contact" id="outlink" class="menuLink">CONTACT</a><br />
+    </div>
+  </div>
+  <div id="chipStart"></div>
+  <div class="chip chipFeatureImage" style="background-image:url(featureImg.png)">
+    <div class="titleBox">
+      <div class="titleOverImage">BUILD Moto</div>
+      <div class="subtitleOverImage">DesignMil 2017</div>
+    </div>
+    <div class="CreamBDRBottom"></div>
+  </div>
+  <div class="chip chipBody">
+      <div class="calloutTitle CoTitleOrange">Stickers</div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(4)" class="SmallPhoto SPLeft" style="background-image:url(stickerEmblem.png)"></div>
+      <div id="PO4" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="stickerEmblem.png" />
+          <div class="popOutCaption">An Emblem Sticker.</div>
+          <div onclick="closePopUp(4)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(4)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(5)" class="SmallPhoto SPMiddle" style="background-image:url(stickerWheel.png)"></div>
+      <div id="PO5" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="stickerWheel.png" />
+          <div class="popOutCaption">A Wheel Sticker.</div>
+          <div onclick="closePopUp(5)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(5)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipBody">
+      <div class="calloutTitle CoTitleOrange">The Handout</div>
+  </div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="handout.png" />
+      <div class="LargePhotoCaption">A print handout.</div>
+  </div>
+  <div class="chip chipBody">
+      <div class="calloutTitle CoTitleOrange">Posters</div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(1)" class="SmallPhoto SPLeft" style="background-image:url(poster1.png)"></div>
+      <div id="PO1" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="poster1.png" />
+          <div class="popOutCaption">A Poster.</div>
+          <div onclick="closePopUp(1)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(1)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(2)" class="SmallPhoto SPMiddle" style="background-image:url(poster2.png)"></div>
+      <div id="PO2" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="poster2.png" />
+          <div class="popOutCaption">A Poster.</div>
+          <div onclick="closePopUp(2)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(2)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(3)" class="SmallPhoto SPRight" style="background-image:url(poster3.png)"></div>
+      <div id="PO3" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="poster3.png" />
+          <div class="popOutCaption">A Poster.</div>
+          <div onclick="closePopUp(3)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(3)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(9)" class="SmallPhoto SPLeft" style="background-image:url(poster4.png)"></div>
+      <div id="PO9" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="poster4.png" />
+          <div class="popOutCaption">A Poster.</div>
+          <div onclick="closePopUp(9)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(9)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(10)" class="SmallPhoto SPMiddle" style="background-image:url(poster5.png)"></div>
+      <div id="PO10" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="poster5.png" />
+          <div class="popOutCaption">A Poster.</div>
+          <div onclick="closePopUp(10)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(10)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipBody">
+      <div class="calloutTitle CoTitleOrange">Shirts</div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(6)" class="SmallPhoto SPLeft" style="background-image:url(shirt1.png)"></div>
+      <div id="PO6" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="shirt1.png" />
+          <div class="popOutCaption">A Red Shirt.</div>
+          <div onclick="closePopUp(6)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(6)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(7)" class="SmallPhoto SPMiddle" style="background-image:url(shirt2.png)"></div>
+      <div id="PO7" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="shirt2.png" />
+          <div class="popOutCaption">A Black Shirt.</div>
+          <div onclick="closePopUp(7)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(7)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(8)" class="SmallPhoto SPRight" style="background-image:url(shirt3.png)"></div>
+      <div id="PO8" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="shirt3.png" />
+          <div class="popOutCaption">A White Shirt.</div>
+          <div onclick="closePopUp(8)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(8)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipBody">
+
+  </div>
+  <div class="chip chipCallout CoOrange">
+    <div class="CreamBDRTop"></div>
+      <div class="calloutTitle CoTitleOrange">DesignMil</div>
+      <div class="calloutSubtitle CoSubtitleOrange">DesignMil is a wonderful charity event in Milwaukee that partners local designers with non-profits to design great things. More details on DesignMil's website.</div>
+      <a class="calloutCTA" href="http://designmil.org">DESIGNMIL.ORG</a>
+  </div>
+  <div class="footer">
+    <div class="OrangeBDRTop"></div>
+    <img class="footerIMG" src="/portrait-linework.png" />
+    <div class="footerText">Be Different.<br />Be Better.<br /><span class="footerOrangeHighlight">Be You.</span><a class="footerCTA" href="/contact">CONTACT ME</a></div>
+  </div>
+
+  <script>
+    launchTransition(); //reset shades
+    closeTransition(); //reset shades
+    launchTransition();
+    setTimeout(function() {
+      closeTransition();
+    }, 1000);
+  </script>
+  <script src="/article.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+* {
+  --colorNavy: #112248;
+  --colorOrange: #F06022;
+  --colorCream: #FDEFE8;
+}
+body, html {
+  position: absolute;
+  width: 100vw !important;
+}

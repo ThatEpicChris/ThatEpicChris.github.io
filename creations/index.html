@@ -1,0 +1,106 @@
+<html>
+
+<head>
+  <title>ChrisB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="material.min.css" type="text/css" rel="stylesheet"> -->
+  <link href="/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/fvc1dfo.css">
+</head>
+
+<body>
+  <script src="/animations.js"></script>
+
+  <div id="shadeGroup" class="shadeGroup">
+    <div id="s1" class="shade s1"></div>
+    <div id="s2" class="shade s2"></div>
+    <div id="s3" class="shade s3"></div>
+    <div id="s4" class="shade s4"></div>
+    <div id="s5" class="shade s5"></div>
+  </div>
+
+  <div class="verts">
+    <div class="vert v1"></div>
+    <div class="vert v2"></div>
+    <div class="vert v3"></div>
+    <div class="vert v4"></div>
+  </div>
+  <div onclick="menuToggle()" id="menuToggle" class="menuToggle">MENU</div>
+  <div id="menuFrame" class="menu" style="visibility: hidden;">
+    <div class="h20Buffer"></div>
+    <div class="menuHeader">
+      Hello There.<br />
+      I'm Chris.<br />
+    </div>
+    <div class="h20Buffer"></div>
+    <div class="menuIndex">
+      <a href="" id="outlink" class="menuLink">HOME</a><br />
+      <a href="/about" id="outlink" class="menuLink">ABOUT</a><br />
+      <a href="/creations" id="outlink" class="menuLink">CREATIONS</a><br />
+      <a href="/blog" id="outlink" class="menuLink">BLOG</a><br />
+      <a href="/contact" id="outlink" class="menuLink">CONTACT</a><br />
+    </div>
+  </div>
+  <div id="chipStart"></div>
+  <div class="chip chipBody pageStart">
+    <div class="calloutTitle CoTitleOrange">My Creations</div>
+  </div>
+  <div class="chip chipWorks" style="background-image: url('trojansAthleticBrand/featureImg.png')">
+    <div class="worksBadge">Concept <img src="pennantRight.svg" class="pennantRight" /></div>
+    <div class="worksTitle">Wauwatosa West Trojans Athletic Brand</div>
+    <a class="worksCTA" href="trojansAthleticBrand">VIEW CREATION</a>
+  </div>
+  <!--
+  <div class="chip chipWorks" style="background-image: url('classOf2018Yrbk/featureImg.png')">
+      <div class="worksTitle">Class of 2018 Yearbook</div>
+      <a class="worksCTA" href="classOf2018Yrbk">VIEW CREATION</a>
+  </div>
+  -->
+  <div class="chip chipWorks" style="background-image: url('designMil2018/featureImg.png')">
+    <div class="worksBadge">DesignMil 2018 <img src="pennantRight.svg" class="pennantRight" /></div>
+    <div class="worksTitle">Koinadugu College</div>
+    <a class="worksCTA" href="designMil2018">VIEW CREATION</a>
+  </div>
+  <div class="chip chipWorks" style="background-image: url('marchingTrojans2018/featureImg.png')">
+      <div class="worksTitle">Marching Trojans Shirt Design 2018</div>
+      <a class="worksCTA" href="marchingTrojans2018">VIEW CREATION</a>
+  </div>
+  <div class="chip chipWorks" style="background-image: url('designMil2017/featureImg.png')">
+    <div class="worksBadge">DesignMil 2017 <img src="pennantRight.svg" class="pennantRight" /></div>
+    <div class="worksTitle">Build Moto</div>
+    <a class="worksCTA" href="designMil2017">VIEW CREATION</a>
+  </div>
+  <div class="chip chipWorks" style="background-image: url('marchingTrojans2017/featureImg.png')">
+      <div class="worksTitle">Marching Trojans Shirt Design 2017</div>
+      <a class="worksCTA" href="marchingTrojans2017">VIEW CREATION</a>
+  </div>
+  <div class="chip chipWorks" style="background-image: url('sidDidIt/featureImg.png')">
+    <div class="worksTitle">Sid Did It</div>
+    <a class="worksCTA" href="http://siddidit.com/">VISIT WEBSITE</a>
+  </div>
+
+
+  <div class="chip chipCallout CoOrange">
+    <div class="CreamBDRTop"></div>
+      <div class="calloutTitle CoTitleOrange">Check out my Dribbble Page</div>
+      <div class="calloutSubtitle CoSubtitleOrange">I post niche designs and works-in-progress on my Dribbble page.</div>
+      <a class="calloutCTA" href="https://dribbble.com/chrisbravata">MY DRIBBBLE PROFILE</a>
+  </div>
+  <div class="footer">
+    <div class="OrangeBDRTop"></div>
+    <img class="footerIMG" src="/portrait-linework.png" />
+    <div class="footerText">Be Different.<br />Be Better.<br /><span class="footerOrangeHighlight">Be You.</span><a class="footerCTA" href="/contact">CONTACT ME</a></div>
+  </div>
+
+  <script>
+    launchTransition(); //reset shades
+    closeTransition(); //reset shades
+    launchTransition();
+    setTimeout(function() {
+      closeTransition();
+    }, 1000);
+  </script>
+  <script src="/article.js"></script>
+</body>
+
+</html>
