@@ -978,10 +978,14 @@ a {
     margin-left: 0;
   }
   .textBox {
-    width: 60vw;
-    left: 20vw;
+    width: 80vw;
+    left: 10vw;
   }
   .quoteMarker {
+    left: -10vw;
+  }
+  .quoteStatement {
+    width: 80vw;
     left: -10vw;
   }
   .chipLargePhoto {
@@ -1016,6 +1020,8 @@ a {
     left: -1px;
   }
   .chipInfoCard {
+    width: 100vw;
+    left: 0;
     padding-top: 55vw;
     padding-bottom: 5vw;
   }
@@ -1023,22 +1029,23 @@ a {
     width: 50vw;
     height: 50vw;
     margin: 5vw;
+    left: 20vw;
   }
   .infoTitle {
     position: relative;
     margin-left: 5vw;
-    width: 50vw;
+    width: 90vw;
     font-size: 24px;
   }
   .infoSubtitle {
     position: relative;
     margin-top: 0;
     margin-left: 5vw;
-    width: 50vw;
+    width: 90vw;
     font-size: 16px;
   }
   .infoDesc {
-    width: 50vw;
+    width: 90vw;
     margin-left: 5vw;
     margin-top: 5vw;
   }
