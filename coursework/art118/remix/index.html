@@ -1,0 +1,196 @@
+<html>
+
+<head>
+  <title>ChrisB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="material.min.css" type="text/css" rel="stylesheet"> -->
+  <link href="/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/fvc1dfo.css">
+</head>
+
+<body>
+  <script src="/animations.js"></script>
+
+  <div id="shadeGroup" class="shadeGroup">
+      <div id="s1" class="shade s1"></div>
+      <div id="s2" class="shade s2"></div>
+      <div id="s3" class="shade s3"></div>
+      <div id="s4" class="shade s4"></div>
+      <div id="s5" class="shade s5"></div>
+  </div>
+
+  <div class="verts">
+    <div class="vert v1"></div>
+    <div class="vert v2"></div>
+    <div class="vert v3"></div>
+    <div class="vert v4"></div>
+  </div>
+  <div onclick="menuToggle()" id="menuToggle" class="menuToggle">MENU</div>
+  <div id="menuFrame" class="menu" style="visibility: hidden;">
+    <div class="h20Buffer"></div>
+    <div class="menuHeader">
+      Hello There.<br />
+      I'm Chris.<br />
+    </div>
+    <div class="h20Buffer"></div>
+    <div class="menuIndex">
+      <a href="/" id="outlink" class="menuLink">HOME</a><br />
+      <a href="/about" id="outlink" class="menuLink">ABOUT</a><br />
+      <a href="/creations" id="outlink" class="menuLink">CREATIONS</a><br />
+      <a href="/blog" id="outlink" class="menuLink">BLOG</a><br />
+      <a href="/contact" id="outlink" class="menuLink">CONTACT</a><br />
+    </div>
+  </div>
+  <div id="chipStart"></div>
+  <div class="chip chipFeatureImage" style="background-image:url(featureImg.png)">
+    <div class="titleBox">
+      <div class="titleOverImage">Remix</div>
+      <div class="subtitleOverImage">ART-118 Digital Arts</div>
+    </div>
+    <div class="CreamBDRBottom"></div>
+  </div>
+  <div class="chip chipBody">
+    <div class="calloutTitle CoTitleOrange">The Assignment</div>
+    <div class="textBox">
+        Demonstrate an understanding of Photoshop through composition and use of selection and transformation tools. All work must be non-destructive within the editing process.
+    </div>
+    <div class="textBox">
+      Specific workflows that should be demonstrated through the works include Layer Management, Advanced Selection, Masking, and Transformation workflows. From the MYTH assignment, the incorporation of Blends, Effects, and/or Filter routines are to be carried over to this assignment. Growth from group feedback session should also be incorporated on the second iteration.
+    </div>
+    <div class="textBox">
+      The file had to be 10 inches by 8 inches at 300ppi. RGB color mode and a transparent background were required as well. All images used must follow Creative Commons licensing or be original.
+    </div>
+  </div>
+  <!-- This was made with Photoshop Chip -->
+  <div class="chipMadeWith">
+    <img class="madeWithImg" src="bridgeLogo.png"/>
+    <div class="madeWithHeader">ORGANIZED WITH</div>
+    <div class="madeWithTitle">Adobe Bridge CC 2019</div>
+  </div>
+  <div class="chipMadeWith">
+    <img class="madeWithImg" src="photoshopLogo.svg"/>
+    <div class="madeWithHeader">MADE WITH</div>
+    <div class="madeWithTitle">Adobe Photoshop CC 2019</div>
+  </div>
+  <div class="chip chipBody">
+  </div>
+  <div class="calloutTitle CoTitleOrange">The First Iteration</div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="remix_BRAVATA_mk1.jpg" />
+      <div class="LargePhotoCaption">Remix - First Iteration</div>
+  </div>
+  <div class="chip chipBody">
+    <div class="textBox">
+      The first iteration tells the story of success, and encourages the viewer to "Start Somewhere". The image collages 6 images together to show how one must start somewhere, often not in the prettiest places, to rise through the ranks to achieve something on the grand stage. This work incorporates workflows from MYTH, including the removal of the TV on the right side of the wall in the 'slum gym'. I used basic transformation and selection tools to position the 'slum gym' and the arena backdrop into place. The backdrop was grayscaled via an adjustment layer to reduce it's presence in the photo; much like how one desires for this final stage, but it's presence in reality is as present in the photo here.<br>
+      The images in the windows show the various stages it takes to get to the grand stage (backdrop graphic). They are positioned in the windows with a selection mask and a blending of 'multiply' to let the paneling of the windows be present.
+    </div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(1)" class="SmallPhoto SPLeft" style="background-image:url(remix_base1.jpg)"></div>
+      <div id="PO1" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="remix_base1.jpg" />
+          <div class="popOutCaption">Backdrop Base Photo</div>
+          <div onclick="closePopUp(1)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(1)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(2)" class="SmallPhoto SPMiddle" style="background-image:url(remix_base2.jpg)"></div>
+      <div id="PO2" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="remix_base2.jpg" />
+          <div class="popOutCaption">'Slum Gym' Base Photo'</div>
+          <div onclick="closePopUp(2)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(2)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(3)" class="SmallPhoto SPRight" style="background-image:url(remix_base3.jpg)"></div>
+      <div id="PO3" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="remix_base3.jpg" />
+          <div class="popOutCaption">Left Wall Base Photo</div>
+          <div onclick="closePopUp(3)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(3)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(4)" class="SmallPhoto SPLeft" style="background-image:url(remix_base4.jpg)"></div>
+      <div id="PO4" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="remix_base4.jpg" />
+          <div class="popOutCaption">Middle-Left Window Base Photo</div>
+          <div onclick="closePopUp(4)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(4)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(5)" class="SmallPhoto SPMiddle" style="background-image:url(remix_base5.jpg)"></div>
+      <div id="PO5" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="remix_base5.jpg" />
+          <div class="popOutCaption">Middle-Right Window Base Photo</div>
+          <div onclick="closePopUp(5)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(5)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(6)" class="SmallPhoto SPRight" style="background-image:url(remix_base6.jpg)"></div>
+      <div id="PO6" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="remix_base6.jpg" />
+          <div class="popOutCaption">Right Wall Base Photo</div>
+          <div onclick="closePopUp(6)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(6)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="LargePhotoCaption">Original Image Used. Click to enlarge.</div>
+  <div class="calloutTitle CoTitleOrange">Feedback</div>
+  <div class="chip chipbody">
+    <div class="textBox">
+      Feedback was very positive; with minimal points for improvement. With that, I decided that I will do somethiing completely different for the second iteration.
+    </div>
+  </div>
+  <div class="calloutTitle CoTitleOrange">The Second Iteration</div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="remix_BRAVATA_mk2.jpg" />
+      <div class="LargePhotoCaption">Myths - Second Iteration</div>
+  </div>
+  <div class="chip chipBody">
+    <div class="textBox">
+      This iteration continues the same basketball theme, the text focusing more on winning the game than rising through the level of sport. I used a selection mask to outline the jumping player and the hoop; and positioned them with the basic transformational tools. The background utilizes adjustment layers to grayscale everything but the videoboard (done with a soft brush to let the 'light of it' shine beyond it's strict border). I used the Dry Brush from the filter gallery to provide some texture to this background layer as well.
+    </div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(7)" class="SmallPhoto SPLeft" style="background-image:url(remix_base7.jpg)"></div>
+      <div id="PO7" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="remix_base7.jpg" />
+          <div class="popOutCaption">Player and Hoop Base Photo</div>
+          <div onclick="closePopUp(7)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(7)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(8)" class="SmallPhoto SPMiddle" style="background-image:url(remix_base8.jpg)"></div>
+      <div id="PO8" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="remix_base8.jpg" />
+          <div class="popOutCaption">Background Arena Base Photo</div>
+          <div onclick="closePopUp(8)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(8)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="LargePhotoCaption">Original Image Used. Click to enlarge.</div>
+
+  <div class="chip chipBody">
+    <div class="textBox">
+      All images are sourced from unsplash.com
+    </div>
+  </div>
+
+
+  <div class="chip chipBody">
+
+  </div>
+  <div class="footer">
+    <div class="CreamBDRTop"></div>
+    <img class="footerIMG" src="/portrait-linework.png" />
+    <div class="footerText">Be Different.<br />Be Better.<br /><span class="footerOrangeHighlight">Be You.</span><a class="footerCTA" href="/contact">CONTACT ME</a></div>
+  </div>
+
+  <script>
+    launchTransition(); //reset shades
+    closeTransition(); //reset shades
+    launchTransition();
+    setTimeout(function() {
+      closeTransition();
+    }, 1000);
+  </script>
+  <script src="/article.js"></script>
+</body>
+
+</html>

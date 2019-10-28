@@ -682,6 +682,36 @@ a {
 .footerCTA:hover {
   background-color: white;
 }
+.chipMadeWith {
+  width: 20vw;
+  background-color: white;
+  height: 70px;
+  margin-left: 40vw;
+  font-family: sofia-pro, sans-serif;
+  margin-bottom: 10px;
+}
+.madeWithHeader {
+  font-family: sofia-pro, sans-serif;
+  font-size: 10px;
+  color: black;
+  opacity: 0.8;
+  font-weight: bold;
+  margin-left: 80px;
+  position: absolute;
+  margin-top: 15px;
+}
+.madeWithTitle {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.madeWithImg {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
 .infoWrapper {
   width: 100vw;
 }
@@ -718,6 +748,10 @@ a {
   font-weight: 700;
   font-size: 30px;
 }
+.infoImgless {
+  margin-left: 10vw !important;
+  width: 40vw !important;
+}
 .infoSubtitle {
   color: var(--colorNavy);
   position: absolute;
@@ -739,7 +773,10 @@ a {
   font-style: normal;
   width: 37vw;
   text-align: justify;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+.infoDescLast {
+  padding-bottom: calc(1vw + 40px);
 }
 .infoAlert {
   width: 100%;
