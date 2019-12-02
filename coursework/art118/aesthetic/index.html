@@ -1,0 +1,153 @@
+<html>
+
+<head>
+  <title>ChrisB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="material.min.css" type="text/css" rel="stylesheet"> -->
+  <link href="/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/fvc1dfo.css">
+</head>
+
+<body>
+  <script src="/animations.js"></script>
+
+  <div id="shadeGroup" class="shadeGroup">
+      <div id="s1" class="shade s1"></div>
+      <div id="s2" class="shade s2"></div>
+      <div id="s3" class="shade s3"></div>
+      <div id="s4" class="shade s4"></div>
+      <div id="s5" class="shade s5"></div>
+  </div>
+
+  <div class="verts">
+    <div class="vert v1"></div>
+    <div class="vert v2"></div>
+    <div class="vert v3"></div>
+    <div class="vert v4"></div>
+  </div>
+  <div onclick="menuToggle()" id="menuToggle" class="menuToggle">MENU</div>
+  <div id="menuFrame" class="menu" style="visibility: hidden;">
+    <div class="h20Buffer"></div>
+    <div class="menuHeader">
+      Hello There.<br />
+      I'm Chris.<br />
+    </div>
+    <div class="h20Buffer"></div>
+    <div class="menuIndex">
+      <a href="/" id="outlink" class="menuLink">HOME</a><br />
+      <a href="/about" id="outlink" class="menuLink">ABOUT</a><br />
+      <a href="/creations" id="outlink" class="menuLink">CREATIONS</a><br />
+      <a href="/blog" id="outlink" class="menuLink">BLOG</a><br />
+      <a href="/contact" id="outlink" class="menuLink">CONTACT</a><br />
+    </div>
+  </div>
+  <div id="chipStart"></div>
+  <div class="chip chipFeatureImage" style="background-image:url(featureImg.png)">
+    <div class="titleBox">
+      <div class="titleOverImage">Aesthetic</div>
+      <div class="subtitleOverImage">ART-118 Digital Arts</div>
+    </div>
+    <div class="CreamBDRBottom"></div>
+  </div>
+  <div class="chip chipBody">
+    <div class="calloutTitle CoTitleOrange">The Assignment</div>
+    <div class="textBox">
+        Demonstrate an understanding of Adobe Illustrator through the use of aligning and distributing shapes, composing new shapes with Pathfinder, and the management of colors. Create four icons that follow a unifying theme and display a cohesive aesthetic.
+    </div>
+    <div class="textBox">
+      Specific workflows that should be demonstrated through the works include Align/Distribution, Shape Modes, Pathfinder, Color Management, and developing a cohesive Aesthetic.
+    </div>
+    <div class="textBox">
+      The file had to be 11 inches by 17 inches at 300ppi. RGB color mode and no bleed were required as well. Copyrighted imagery was allowed for the sole usage as a reference photo.
+    </div>
+  </div>
+  <!-- This was made with Photoshop Chip -->
+  <div class="chipMadeWith">
+    <img class="madeWithImg" src="bridgeLogo.png"/>
+    <div class="madeWithHeader">ORGANIZED WITH</div>
+    <div class="madeWithTitle">Adobe Bridge CC 2020</div>
+  </div>
+  <div class="chipMadeWith">
+    <img class="madeWithImg" src="illustratorLogo.svg"/>
+    <div class="madeWithHeader">MADE WITH</div>
+    <div class="madeWithTitle">Adobe Illustrator CC 2020</div>
+  </div>
+  <div class="chip chipBody">
+  </div>
+  <div class="calloutTitle CoTitleOrange">The Icons</div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="aesthetic_BRAVATA.png" />
+      <div class="LargePhotoCaption">Aesthetic</div>
+  </div>
+  <div class="chip chipBody">
+    <div class="textBox">
+      The archetype for the icons that I created was basketball arenas in the state of Wisconsin. The established aesthetic for each icon featured a 3pt black stroke, and a limited color palette reflecting the title tenant of each venue. Various tints and shades of these colors were used to provide depth or difference.<br>
+      The first icon was of the Fiserv Forum; the newest basketball arena in Wisconsin. The color palette consists of the offical colors of the Milwaukee Bucks; Green, Blue, and Cream. Due to the unusual roof, I did use the pen tool to best recreate this non-circular curve. From there, I used the line tool and the rectangle tool to draw the remainder of the arena's facade. Light tweaks in the largest rectangle with the pen tool was used to fill behind the swooping roof.<br>
+      The second icon is the MECCA (UWM Panther Arena). The Mens Basketball team for UWM plays here, so the color palette consists of the Black and Gold tints and shades. The base structure was created from the rectangle tool the line tool. The radial roof was created through the usage of pathfinder. I first drew a circle (elipse tool); and subtracted from it with a rectangle. I repeated this three times to create the three 'rings' of the roof.<br>
+      The third icon is the Klotsche Center. All other UWM athletics play at this arena, including the Womens Basketball team. This icon uses the same color palette as the MECCA, and is entirely drawn with the usage of the rectangle tool and the line tool. For the gold roof piece, I layered two rectangles that were ofset - and subtracted them via Pathfinder. From there, I adjusted one point with the direct select tool to create a slight slant.<br>
+      The last icon is of the Kohl Center, home of the Wisconsin Badgers. Their colors involve a cardinal red and white. Majority of this figure was created with the layering of rectangles and lines; with one oval shape (created from the elipse) to represent the iconic UW-Madison emblem on the left face of the building. I also included a rectangle with no stroke across the top to represent the red 'Kohl Center' signage.
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(1)" class="SmallPhoto SPLeft" style="background-image:url(icon1base.jpg)"></div>
+      <div id="PO1" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="icon1base.jpg" />
+          <div class="popOutCaption">Fiserv Forum</div>
+          <div onclick="closePopUp(1)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(1)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(2)" class="SmallPhoto SPMiddle" style="background-image:url(icon2base.jpg)"></div>
+      <div id="PO2" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="icon2base.jpg" />
+          <div class="popOutCaption">MECCA (UWM Panther Arena)</div>
+          <div onclick="closePopUp(2)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(2)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(3)" class="SmallPhoto SPMiddle" style="background-image:url(icon3base.jpg)"></div>
+      <div id="PO3" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="icon3base.jpg" />
+          <div class="popOutCaption">Klotsche Center</div>
+          <div onclick="closePopUp(3)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(3)" class="popOutShadow"></div>
+      </div>
+      <div onclick="openPopUp(4)" class="SmallPhoto SPMiddle" style="background-image:url(icon4base.jpg)"></div>
+      <div id="PO4" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="icon4base.jpg" />
+          <div class="popOutCaption">Kohl Center</div>
+          <div onclick="closePopUp(4)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(4)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipBody">
+    <div class="textBox">
+      These icons mimic the facades of some of Wisconsin's basketball arenas. These icons are a direct remediation of the real-life photos, however the unique architeture of each are preseved in the icons.
+    </div>
+  </div>
+
+  <div class="chip chipBody">
+    <div class="textBox">
+      Various images were used from Google Images. The images shown here are the ones that I referenced the most and provided the most detail. I also referenced Google Streetview for additional angles of these buildings.
+    </div>
+  </div>
+
+
+  <div class="chip chipBody">
+
+  </div>
+  <div class="footer">
+    <div class="CreamBDRTop"></div>
+    <img class="footerIMG" src="/portrait-linework.png" />
+    <div class="footerText">Be Different.<br />Be Better.<br /><span class="footerOrangeHighlight">Be You.</span><a class="footerCTA" href="/contact">CONTACT ME</a></div>
+  </div>
+
+  <script>
+    launchTransition(); //reset shades
+    closeTransition(); //reset shades
+    launchTransition();
+    setTimeout(function() {
+      closeTransition();
+    }, 1000);
+  </script>
+  <script src="/article.js"></script>
+</body>
+
+</html>

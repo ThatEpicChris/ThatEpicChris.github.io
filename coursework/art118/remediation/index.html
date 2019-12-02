@@ -1,0 +1,164 @@
+<html>
+
+<head>
+  <title>ChrisB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="material.min.css" type="text/css" rel="stylesheet"> -->
+  <link href="/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/fvc1dfo.css">
+</head>
+
+<body>
+  <script src="/animations.js"></script>
+
+  <div id="shadeGroup" class="shadeGroup">
+      <div id="s1" class="shade s1"></div>
+      <div id="s2" class="shade s2"></div>
+      <div id="s3" class="shade s3"></div>
+      <div id="s4" class="shade s4"></div>
+      <div id="s5" class="shade s5"></div>
+  </div>
+
+  <div class="verts">
+    <div class="vert v1"></div>
+    <div class="vert v2"></div>
+    <div class="vert v3"></div>
+    <div class="vert v4"></div>
+  </div>
+  <div onclick="menuToggle()" id="menuToggle" class="menuToggle">MENU</div>
+  <div id="menuFrame" class="menu" style="visibility: hidden;">
+    <div class="h20Buffer"></div>
+    <div class="menuHeader">
+      Hello There.<br />
+      I'm Chris.<br />
+    </div>
+    <div class="h20Buffer"></div>
+    <div class="menuIndex">
+      <a href="/" id="outlink" class="menuLink">HOME</a><br />
+      <a href="/about" id="outlink" class="menuLink">ABOUT</a><br />
+      <a href="/creations" id="outlink" class="menuLink">CREATIONS</a><br />
+      <a href="/blog" id="outlink" class="menuLink">BLOG</a><br />
+      <a href="/contact" id="outlink" class="menuLink">CONTACT</a><br />
+    </div>
+  </div>
+  <div id="chipStart"></div>
+  <div class="chip chipFeatureImage" style="background-image:url(featureImg.png)">
+    <div class="titleBox">
+      <div class="titleOverImage">Remediation</div>
+      <div class="subtitleOverImage">ART-118 Digital Arts</div>
+    </div>
+    <div class="CreamBDRBottom"></div>
+  </div>
+  <div class="chip chipBody">
+    <div class="calloutTitle CoTitleOrange">The Assignment</div>
+    <div class="textBox">
+        Demonstrate an understanding of Adobe Illustrator through the use of the pen tool, live paint, and the blob brush. The goal is to take a pixel image and remediate it into vector form; all work must be non-destructive throughout the editing process.
+    </div>
+    <div class="textBox">
+      Specific workflows that should be demonstrated through the works include Embedding Images, Live Selection, and Proper Layer Naming.
+    </div>
+    <div class="textBox">
+      The file had to be 5 inches by 5 inches at 300ppi. RGB color mode and no bleed were required as well. All images used must follow Creative Commons licensing or be original.
+    </div>
+  </div>
+  <!-- This was made with Photoshop Chip -->
+  <div class="chipMadeWith">
+    <img class="madeWithImg" src="bridgeLogo.png"/>
+    <div class="madeWithHeader">ORGANIZED WITH</div>
+    <div class="madeWithTitle">Adobe Bridge CC 2020</div>
+  </div>
+  <div class="chipMadeWith">
+    <img class="madeWithImg" src="photoshopLogo.svg"/>
+    <div class="madeWithHeader">PREPARED WITH</div>
+    <div class="madeWithTitle">Adobe Photoshop CC 2020</div>
+  </div>
+  <div class="chipMadeWith">
+    <img class="madeWithImg" src="illustratorLogo.svg"/>
+    <div class="madeWithHeader">MADE WITH</div>
+    <div class="madeWithTitle">Adobe Illustrator CC 2020</div>
+  </div>
+  <div class="chip chipBody">
+  </div>
+  <div class="chip chipBody">
+    <div class="textBox">
+      All images were resized and cropped within Adobe Photoshop to match the 5 inch x 5 inch Artboard that was used in Adobe Illustrator.
+    </div>
+  </div>
+
+  <div class="calloutTitle CoTitleOrange">The First Iteration</div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="remediation_bravata_mk1.pdf" />
+      <div class="LargePhotoCaption">Remediation - First Iteration (Pen Tool)</div>
+  </div>
+  <div class="chip chipBody">
+    <div class="textBox">
+      This 'first iteration' demonstrated the usage of the Pen Tool and the creation of bezier curves. This process took two weeks to complete. The first week involved selecting the photo and beginning the remediation process. The image that I chose was of the Sydney ICC, for it's geometric architecture and stark lighting. Throughout the first week I began to extensively draw all the details in the bottom right portion of the image. In hindsight, this was not as effecient - whereas during the second week I began to work top-down; bigger shapes to smaller details. Throughout the extensive usage of the pen tool I found myself becoming more confident with creating bezier curves and manipulating them on various shapes.<br>
+      With the outline complete, I selected all the lines drawn and transitioned to using Live Paint. This created shapes from all of the lines I created.  From here, I alternated between the Eyedropper Tool and the Live Paint bucket to fill in the shapes with sampled colors to create a remediated image of the Sydney ICC.
+    </div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(1)" class="SmallPhoto SPLeft" style="background-image:url(iteration1_remediation_base.png)"></div>
+      <div id="PO1" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="iteration1_remediation_base.png" />
+          <div class="popOutCaption">Original Sydney ICC Photo</div>
+          <div onclick="closePopUp(1)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(1)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="LargePhotoCaption">Original Image Used. Click to enlarge.</div>
+  <div class="chip chipbody">
+    <div class="textBox">
+      The level of remediation that I conducted on this image of the Sydney ICC is not strong enough to be considered hyperrealistic; bearing a more simplified representation of reality.
+    </div>
+  </div>
+  <div class="calloutTitle CoTitleOrange">The Second Iteration</div>
+  <div class="chip chipLargePhoto">
+      <img class="LargePhoto" src="remediation_bravata_mk2.pdf" />
+      <div class="LargePhotoCaption">Remediation - Second Iteration (Blob Brush)</div>
+  </div>
+  <div class="chip chipBody">
+    <div class="textBox">
+      The second iteration employs the usage of the Blob Brush to draw vector shapes and color a remediated image. I selected an image of a mountainscape with a simple yet vivid color palette with some shadow lines being gradual and others stark. I utilized the iPad Pro with Apple Pencil (via Sidecar) as my drawing tablet of choice and began the rediation process. I had the image on a locked layer titled "Pixels" with a layer above for my blob brush shapes. I then alternated between the eyedropper tool and the Blob Brush to draw shapes. For larger shapes, I simply drew an outline with a closed perimeter and removed the interior shape via the Direct Select Tool to effectively fill the outline in. Once I neared completion of the image, I created a layer that was nestled between the Blob Brush shapes and the "Pixels". This layer contained one neon square - for the sole purpose of finding 'holes' within the Blob Brush layer. I went through the process of sampling nearby shapes colors and expanding them via the Blob Brush tool to close these holes. With no holes remaining, I turned this layer off but left it within the file incase I would need it in the future.
+    </div>
+  </div>
+  <div class="chip chipTriplePhoto">
+      <div onclick="openPopUp(2)" class="SmallPhoto SPLeft" style="background-image:url(iteration2_bravata_base.png)"></div>
+      <div id="PO2" class="popOutImagery" style="visibility:hidden">
+          <img class="popOutImage" src="iteration2_bravata_base.png" />
+          <div class="popOutCaption">Original Mountainscape Photo</div>
+          <div onclick="closePopUp(2)" class="popOutExit">CLOSE</div>
+          <div onclick="closePopUp(2)" class="popOutShadow"></div>
+      </div>
+  </div>
+  <div class="chip chipbody">
+    <div class="textBox">
+      Much like the first iteration, this remediated image does not demonstrate a form of hyperrealism. As this image is a photograph of nature with no manmade structures, there is no propaganda nor any presence of semiotics. Purely put - this is a picture of a nature that conveys no ideology, meaning, or message.
+  </div>
+  <div class="chip chipBody">
+    <div class="textBox">
+      Both images are sourced from unsplash.com
+    </div>
+  </div>
+
+
+  <div class="chip chipBody">
+
+  </div>
+  <div class="footer">
+    <div class="CreamBDRTop"></div>
+    <img class="footerIMG" src="/portrait-linework.png" />
+    <div class="footerText">Be Different.<br />Be Better.<br /><span class="footerOrangeHighlight">Be You.</span><a class="footerCTA" href="/contact">CONTACT ME</a></div>
+  </div>
+
+  <script>
+    launchTransition(); //reset shades
+    closeTransition(); //reset shades
+    launchTransition();
+    setTimeout(function() {
+      closeTransition();
+    }, 1000);
+  </script>
+  <script src="/article.js"></script>
+</body>
+
+</html>
