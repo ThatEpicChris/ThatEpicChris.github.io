@@ -240,7 +240,7 @@ a {
 }
 .footer {
   width: 100vw;
-  height: 550px;
+  height: 35vw;
   position: relative;
   background-color: var(--colorNavy);
 }
