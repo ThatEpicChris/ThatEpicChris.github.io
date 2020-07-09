@@ -1,12 +1,12 @@
 {
 	"slider": {
 		"slider1": {
-			"title": "Tosa West Trojans",
-			"subtitle": "Concept Sports Branding",
-			"img": "creations/trojansAthleticBrand/featureImg.png",
+			"title": "Art & Design LLC",
+			"subtitle": "Logo & Shirt",
+			"img": "creations/adLLC/featureImg.png",
 			"id": "sT1",
       "bannerId": "hB1",
-			"link": "/creations/trojansAthleticBrand"
+			"link": "/creations/adLLC"
 		},
 		"slider2": {
 			"title": "Marching Trojans",
@@ -17,12 +17,12 @@
 			"link": "/creations/marchingTrojans2018"
 		},
 		"slider3": {
-			"title": "Koinadugu College",
-			"subtitle": "DesignMil 2018",
-			"img": "creations/designMil2018/featureImg.png",
+			"title": "Tosa West Trojans",
+			"subtitle": "Concept Sports Branding",
+			"img": "creations/trojansAthleticBrand/featureImg.png",
 			"id": "sT3",
       "bannerId": "hB3",
-			"link": "/creations/designMil2018"
+			"link": "/creations/trojansAthleticBrand"
 		}
 	}
 }
