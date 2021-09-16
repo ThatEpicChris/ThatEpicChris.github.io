@@ -13,15 +13,14 @@
         </style>
     </head>
     <body>
-        <a id="hotShot" rel="ar" href="haunted-exp.usdz">Hot Shot AR</a>
+        <a id="hotShot" rel="ar" href="hot-shot-exp.usdz">Hot Shot AR</a>
         <a id="chocShot" rel="ar" href="choc-shot-exp.usdz">Choc Shot AR</a>
         <a id="hauntedMaple" rel="ar" href="haunted-exp.usdz">Haunted Maple AR</a>
         <a id="flyChai" rel="ar" href="fly-chai.usdz">Fly Chai AR</a>
         <script>
-            const aLink = document.querySelector('hotShot');
-            aLink.click();
+            const hotShot = document.getElementById('hotShot');
             window.addEventListener('load', (event) => {
-                aLink.click();
+                hotShot.click();
             });
         </script>
     </body>
