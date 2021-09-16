@@ -2,12 +2,27 @@
 <html lang="en">
     <head>
         <title>AR Auto-launch Link</title>
+        <style>
+            a {
+                display: block;
+                width: calc(100% - 130px);
+                margin: 15px;
+                padding: 50px;
+                background-color: rgba(0,0,0,0.1);
+            }
+        </style>
     </head>
     <body>
-        <a id="arTag" rel="AR" href="haunted-exp.usdz">When in doubt - click me</a>
+        <a id="hotShot" rel="ar" href="haunted-exp.usdz">Hot Shot AR</a>
+        <a id="chocShot" rel="ar" href="choc-shot-exp.usdz">Choc Shot AR</a>
+        <a id="hauntedMaple" rel="ar" href="haunted-exp.usdz">Haunted Maple AR</a>
+        <a id="flyChai" rel="ar" href="fly-chai.usdz">Fly Chai AR</a>
         <script>
-            const aLink = document.querySelector('arTag');
+            const aLink = document.querySelector('hotShot');
             aLink.click();
+            window.addEventListener('load', (event) => {
+                aLink.click();
+            });
         </script>
     </body>
 </html>
